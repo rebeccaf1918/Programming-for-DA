@@ -28,6 +28,7 @@ Probabiltiy of reoffending:
 # import pandas with shortcut 'pd' 
 import pandas as pd 
 
+
 #############
 # Set the seed so that the numbers can be reproduced.
 np.random.seed(0)  
@@ -49,16 +50,16 @@ np.random.seed(0)
 #result = np.random.choice(genders, 5801, p=[0.891, 0.109]) # per https://www.iprt.ie/latest-news/irish-prison-service-annual-report-2022/
 #print(result)
 
-Ages = ['18-24', '25-34', '35-44', '45-54', '55+']
-age = np.random.choice(Ages, 5045, p=[0.153, 0.38, 0.297, 0.118, 0.052])
+#Ages = ['18-24', '25-34', '35-44', '45-54', '55+']
+#age = np.random.choice(Ages, 5045, p=[0.153, 0.38, 0.297, 0.118, 0.052])
 #print(age)
 # excludes those not sentenced eg those commited on contempt of court & on remand awaiting trial
 # https://www.irishprisons.ie/wp-content/uploads/documents_pdf/SENTENCED-COMMITTALS-by-Age-and-Gender-Year-2007-to-2022.pdf
 
-#Ages = ['Under 21', '21-25', '26-30', '31-35', '36-40', '41-50' '50+']
-#age = np.random.choice(Ages, 2604, p=[0.057, 0.193, 0.211, 0.184, 0.133, 0.141, 0.078])
-
-
+Ages = ['Under 21', '21-25', '26-30', '31-35', '36-40', '41-50', '50+']
+age = np.random.choice(Ages, 2604, p=[0.058, 0.194, 0.211, 0.184, 0.133, 0.141, 0.079])
+#print(age)  ^^^ THIS IS MULTINOMIAL DISTRIBUTION
+# Distribution of age groups of released prisoners per https://data.cso.ie/
 
 sea.countplot(x=age, order=Ages)
 plt.title('Distribution of Age Groups')
@@ -70,4 +71,21 @@ plt.show()
 #^^^ # rewrite
 
 
-#total prison releases in 2017 = 2604 
+#total prison releases in 2017 = 2604    [2410 male, 194 female]
+
+Genders = ['Male', 'Female'] 
+result = np.random.choice(Genders, 2604, p=[0.925, 0.075])  # BINOMIAL DISTRIBUTION
+print(result)
+
+sea.countplot(x=result, order=Genders)
+plt.title('Distribution of Gender Groups')
+plt.show()
+
+
+59.7% were neither employed nor in education 
+#https://www.cso.ie/en/releasesandpublications/fp/p-offo/offenders2016employmenteducationandotheroutcomes2016-2019/introduction/
+#statuses = np.random.choice([0, 1, 2], n_prisoners, p=[0.597, 0.095, 0.196])
+
+education_level = np.random.choice([0, 1, 2, 3, 4])
+
+assigning a number to the education level of the prisoner 
