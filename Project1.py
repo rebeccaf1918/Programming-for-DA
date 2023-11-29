@@ -23,7 +23,6 @@ Probabiltiy of reoffending:
 4. Length of imprisonment - 
 5. Education level/economic of criminal - categorical ordinal
 '''
-# Look at those sentenced in 2022 and their probability of reoffending
 
 # import pandas with shortcut 'pd' 
 import pandas as pd 
@@ -34,36 +33,12 @@ import pandas as pd
 np.random.seed(0)  
 
 # 2747 people released in 2020 (41% reoffended within 1 year of release from custodial sentence)
-
-#genders = ['Male', 'Female'] 
-#result = np.random.choice(genders, 4122, p=[0.96, 0.04]) # setting the probability per https://www.iprt.ie/latest-news/irish-prison-service-annual-report-2022/
-# as per 2022 prison population 
-#print(result) # displaying the resultant array 
-
-#Bernoulli distribution
-
-
-### 
-# Determining variables affecting prison commitals: Age, Gender, Education level, Type of offence, region?
-
-#Genders = ['Male', 'Female'] 
-#result = np.random.choice(genders, 5801, p=[0.891, 0.109]) # per https://www.iprt.ie/latest-news/irish-prison-service-annual-report-2022/
-#print(result)
-
 #Ages = ['18-24', '25-34', '35-44', '45-54', '55+']
 #age = np.random.choice(Ages, 5045, p=[0.153, 0.38, 0.297, 0.118, 0.052])
 #print(age)
 # excludes those not sentenced eg those commited on contempt of court & on remand awaiting trial
 # https://www.irishprisons.ie/wp-content/uploads/documents_pdf/SENTENCED-COMMITTALS-by-Age-and-Gender-Year-2007-to-2022.pdf
 
-Ages = ['Under 21', '21-25', '26-30', '31-35', '36-40', '41-50', '50+']
-age = np.random.choice(Ages, 2604, p=[0.058, 0.194, 0.211, 0.184, 0.133, 0.141, 0.079])
-#print(age)  ^^^ THIS IS MULTINOMIAL DISTRIBUTION
-# Distribution of age groups of released prisoners per https://data.cso.ie/
-
-sea.countplot(x=age, order=Ages)
-plt.title('Distribution of Age Groups')
-plt.show()
 
 ## If you want to visualize this distribution, you can use a bar plot or a pie chart, which are suitable for categorical data. If you want to fit a known distribution to your data, that’s a more complex task and may not be possible without additional assumptions or data.
 # if you have reason to believe that the underlying age distribution is normal (or any other known distribution), you could fit a model to your data using maximum likelihood estimation or other methods. However, this would require you to assign a numerical value to each age group, which may not accurately reflect the true age distribution.
@@ -71,21 +46,26 @@ plt.show()
 #^^^ # rewrite
 
 
-#total prison releases in 2017 = 2604    [2410 male, 194 female]
 
-Genders = ['Male', 'Female'] 
-result = np.random.choice(Genders, 2604, p=[0.925, 0.075])  # BINOMIAL DISTRIBUTION
-print(result)
 
-sea.countplot(x=result, order=Genders)
-plt.title('Distribution of Gender Groups')
+
+Economic_Status = ['Neither employment nor education', 'substantial employment only', 'education and training only',
+                   'education and training and substantial employment', 'not identified' ]
+
+Status = np.random.choice(Economic_Status, 2604, p=[0.597, 0.095, 0.196, 0.022, 0.09])
+#print(Status)
+
+sea.countplot(x=Status, order=Economic_Status)
+plt.title('Distribution of Age Groups')
 plt.show()
 
 
-59.7% were neither employed nor in education 
+
 #https://www.cso.ie/en/releasesandpublications/fp/p-offo/offenders2016employmenteducationandotheroutcomes2016-2019/introduction/
 #statuses = np.random.choice([0, 1, 2], n_prisoners, p=[0.597, 0.095, 0.196])
 
-education_level = np.random.choice([0, 1, 2, 3, 4])
+#education_level = np.random.choice([0, 1, 2, 3, 4])
 
-assigning a number to the education level of the prisoner 
+#assigning a number to the education level of the prisoner 
+
+
