@@ -46,8 +46,7 @@ np.random.seed(0)
 #^^^ # rewrite
 
 
-
-
+#
 
 Economic_Status = ['Neither employment nor education', 'substantial employment only', 'education and training only',
                    'education and training and substantial employment', 'not identified' ]
