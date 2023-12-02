@@ -4,14 +4,6 @@ import seaborn as sea
 import sys
 import matplotlib.pyplot as plt
 
-'''' 
-1. Age - categorical discrete 
-2. Gender - Categorical nominal data (Or region)
-3. Type of offence - categorical nominal 
-4. Length of imprisonment - 
-5. Education level/economic of criminal - categorical ordinal
-'''
-#############
 # Set the seed so that the numbers can be reproduced.
 np.random.seed(0)  
 
