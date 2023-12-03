@@ -67,4 +67,11 @@ with open ("SimulatedDataSet.txt", "w") as f: #w to write to file and opened it 
     print(df.describe())
     sys.stdout = original_stdout
 
+sea.histplot(x='Age', hue='Gender', data=df)
+plt.show()
 
+''' from sklearn.preprocessing import LabelEncoder le = LabelEncoder() df['Gender'] = le.fit_transform(df['Gender'])
+ df['Age'] = le.fit_transform(df['Age']) 
+ df['Economic Status'] = le.fit_transform(df['Economic Status']) 
+ df['Offence Type'] = le.fit_transform(df['Offence Type']) 
+ print(df) sea.pairplot(df) plt.show() '''
