@@ -5,7 +5,7 @@ Created by Rebecca Feeley
 Student ID G00425652  
 
 # Introduction
-This repository contains my pands project for the Programming for Data Analysis module which forms part of the ATU Galway HDIP in Data Analytics.   
+This repository contains my project for the Programming for Data Analysis module which forms part of the ATU Galway HDIP in Data Analytics.   
 This repository contains a Jupyter notebook on the research I conducted on a real world phenomenon, an investigation into each of the variables, an exploration of their relationships iwth each other, a simulated data set of the variables and a summary of my findings.
 
 
@@ -24,11 +24,11 @@ This code is written in Python programming language and there are a few requirme
   
 ## Requirements & Instructions  
 In order to begin my analysis of the data set, I began by importing the libraries I would need to view and manipulate the data:
-[Pandas](https://pandas.pydata.org/) is a very useful library for analysing and manipulating data and making a dataset readable.
-[Matplotlib](https://matplotlib.org/) is used for creating visualisations in Python from boxplots to scatterplots. 
-[Numpy](https://numpy.org/doc/stable/index.html) is short for 'Numerical Python' and is useful when working with number arrays.
-[Sys](https://www.geeksforgeeks.org/python-sys-module/) has many helpful features which assist in creating Python code such as facilitating command line arguments to be passed to a script.
-[Seaborn](https://seaborn.pydata.org/tutorial/introduction) is built on top of Matplotlib and is used for creating statisical visualisations, with added features.
+- [Pandas](https://pandas.pydata.org/) is a very useful library for analysing and manipulating data and making a dataset readable.
+- [Matplotlib](https://matplotlib.org/) is used for creating visualisations in Python from boxplots to scatterplots. 
+- [Numpy](https://numpy.org/doc/stable/index.html) is short for 'Numerical Python' and is useful when working with number arrays.
+- [Sys](https://www.geeksforgeeks.org/python-sys-module/) has many helpful features which assist in creating Python code such as facilitating command line arguments to be passed to a script.
+- [Seaborn](https://seaborn.pydata.org/tutorial/introduction) is built on top of Matplotlib and is used for creating statisical visualisations, with added features.
 
 
 
