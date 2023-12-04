@@ -48,3 +48,5 @@ https://www.irishtimes.com/news/crime-and-law/highest-education-level-for-half-o
 https://stackoverflow.com/questions/42528921/how-to-prevent-overlapping-x-axis-labels-in-sns-countplot
 
 https://stackoverflow.com/questions/55085336/how-to-set-y-axes-limits-in-countplot
+
+http://seaborn.pydata.org/tutorial/categorical.html
