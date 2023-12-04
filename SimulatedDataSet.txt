@@ -1,19 +1,19 @@
-     Gender    Age      Economic Status           Offence Type
-0      Male  21-25        No Edu or Emp                  Theft
-1      Male  36-40       Not Identified                    RTO
-2      Male  36-40        No Edu or Emp           Public Order
-3      Male  41-50        No Edu or Emp           Unclassified
-4      Male  31-35       Not Identified               Burglary
-...     ...    ...                  ...                    ...
-2599   Male  21-25       Not Identified                     WO
-2600   Male  31-35        No Edu or Emp                  Theft
-2601   Male  26-30  Edu & Training Only                  Theft
-2602   Male  21-25        No Edu or Emp  Atmptd murder/assault
-2603   Male    50+       Not Identified                  Theft
+     Gender       Age           Economic Status           Offence Type
+0      Male     36-40                  Emp Only           Public Order
+1      Male     36-40       Edu & Training Only                     PD
+2      Male     41-50             No Edu or Emp           Public Order
+3      Male     31-35       Edu & Training Only                    RTO
+4      Male     21-25                  Emp Only  Atmptd murder/assault
+...     ...       ...                       ...                    ...
+2599   Male       50+       Edu & Training Only     Offences agnst Gov
+2600   Male     36-40            Not Identified           Public Order
+2601   Male     21-25       Edu & Training Only           Public Order
+2602   Male  Under 21             No Edu or Emp                    RTO
+2603   Male       50+  Edu, Training & Emp Only                     WO
 
 [2604 rows x 4 columns]
        Gender    Age Economic Status Offence Type
 count    2604   2604            2604         2604
 unique      2      7               5           16
 top      Male  26-30  Not Identified        Theft
-freq     2373    583             935          601
+freq     2402    573             930          598

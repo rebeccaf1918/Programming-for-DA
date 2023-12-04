@@ -32,8 +32,6 @@ In order to begin my analysis of the data set, I began by importing the librarie
 
 
 
-
-
 # REFERENCES
 
 https://www.unodc.org/e4j/en/crime-prevention-criminal-justice/module-7/key-issues/2--justifying-punishment-in-the-community.html
@@ -41,6 +39,7 @@ https://www.unodc.org/e4j/en/crime-prevention-criminal-justice/module-7/key-issu
 https://mostly.ai/blog/data-simulation
 
 https://www.cso.ie/en/releasesandpublications/fp/p-ofdfo/offenders2016employmenteducationandotheroutcomes2016-2019/introduction/
+
 https://stackoverflow.com/questions/42528921/how-to-prevent-overlapping-x-axis-labels-in-sns-countplot
 
 https://www.irishtimes.com/news/crime-and-law/highest-education-level-for-half-of-prisoners-is-junior-cert-or-less-cso-1.4372566
@@ -52,4 +51,6 @@ https://stackoverflow.com/questions/55085336/how-to-set-y-axes-limits-in-countpl
 http://seaborn.pydata.org/tutorial/categorical.html
 
 https://www.iprt.ie/latest-news/high-rates-of-reoffending-following-imprisonment-for-less-serious-crime-demands-alternative-response-iprt/
+
+https://www.almabetter.com/bytes/articles/pandas-dataframes-in-jupyter-notebook
 
