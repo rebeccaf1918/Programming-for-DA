@@ -13,15 +13,15 @@
 
      Reoffending by Age Reoffending by Gender Reoffending by Offence Type  
 0          Not Reoffend              Reoffend                Not Reoffend  
-1          Not Reoffend          Not Reoffend                        None  
+1          Not Reoffend          Not Reoffend                Not Reoffend  
 2              Reoffend          Not Reoffend                Not Reoffend  
-3          Not Reoffend              Reoffend                        None  
-4          Not Reoffend          Not Reoffend                    Reoffend  
+3          Not Reoffend              Reoffend                    Reoffend  
+4          Not Reoffend          Not Reoffend                Not Reoffend  
 ...                 ...                   ...                         ...  
-2599           Reoffend              Reoffend                    Reoffend  
+2599           Reoffend              Reoffend                Not Reoffend  
 2600       Not Reoffend              Reoffend                    Reoffend  
-2601           Reoffend              Reoffend                Not Reoffend  
-2602       Not Reoffend              Reoffend                    Reoffend  
-2603           Reoffend              Reoffend                Not Reoffend  
+2601           Reoffend              Reoffend                    Reoffend  
+2602       Not Reoffend              Reoffend                Not Reoffend  
+2603           Reoffend              Reoffend                    Reoffend  
 
 [2604 rows x 7 columns]
